@@ -1,0 +1,14 @@
+{
+	"private": true,
+	"workspaces": [
+		"a",
+		"b"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"typescript": "nightly"
+	},
+	"scripts": {
+		"build": "yarn tsc a/src/index.ts --declaration --emitDeclarationOnly --outFile a/dist/index.d.ts"
+	}
+}
